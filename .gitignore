@@ -1,0 +1,9 @@
+*.class
+*.html
+*.js
+bin/
+build/
+out/
+target/
+.vscode/
+.DS_Store
