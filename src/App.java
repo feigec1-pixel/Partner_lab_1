@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
 * Lab 1: Unit Conversions
 * @author Colton Feige
-* @author 
+* @author Kelvin Myat
 */
 public class App {
     public static void main(String[] args) throws Exception {
