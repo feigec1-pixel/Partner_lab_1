@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+* Lab 1: Unit Conversions
+* @author Colton Feige
+* @author 
+*/
 public class App {
     public static void main(String[] args) throws Exception {
         int x = 5;                                                                                                                          
@@ -10,7 +14,11 @@ public class App {
         }
         System.out.println("Program finished.");
     }
-
+/**
+* Displays a menu of options for unit conversions and calls the appropriate method based on user input
+* @param in Scanner object to read user input
+* @return void
+*/
     public static void menu (Scanner in) {
         System.out.println("Choose one of the following options: ");
         System.out.println("(1) Convert Pounds And Ounces To Grams");
@@ -44,6 +52,11 @@ public class App {
                 System.out.println("Invalid option");
             }
     }
+/**
+* Converts hours, minutes, and seconds to total seconds
+* @param in Scanner object to read user input
+* @return void
+*/
     public static void time (Scanner in) {
         System.out.print("Enter hours: ");
         int hours = in.nextInt();
@@ -54,7 +67,11 @@ public class App {
         int totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
         System.out.println("Total seconds: " + totalSeconds);
     }
-
+/**
+* Converts quarters, dimes, nickels, and pennies to total amount in dollars
+* @param in Scanner object to read user input
+* @return void
+*/
     public static void change (Scanner in) {
         System.out.print("Enter amount in quarters: ");
         int quarters = in.nextInt();
@@ -67,8 +84,11 @@ public class App {
         double total = (quarters * 0.25) + (dimes * 0.10) + (nickels * 0.05) + (pennies * 0.01);
         System.out.println("Total amount: $" + total);
     }
-
-    
+/**  
+ * Converts pounds and ounces to grams
+ * @param in Scanner object to read user input
+ * @return void
+ */   
     public static void PoundsAndOuncesToGrams (Scanner in) {
         System.out.print("Enter pounds: ");
         double pounds = in.nextDouble();
@@ -77,6 +97,11 @@ public class App {
         double grams = (pounds * 453.592) + (ounces * 28.3495);
         System.out.println("Grams: " + grams);
     }
+/**
+* Converts grams to pounds and ounces
+* @param in Scanner object to read user input
+* @return void
+*/
     public static void gramsToPoundsAndOunces (Scanner in) {
         System.out.print("Enter grams: ");
         double grams = in.nextDouble();
@@ -85,6 +110,11 @@ public class App {
         double ounces = (totalPounds - pounds) * 16;
         System.out.println("Pounds: " + pounds + ", Ounces: " + ounces);
     }
+/**
+* Converts feet and inches to meters
+* @param in Scanner object to read user input
+* @return void
+*/
     public static void FeetAndInchesToMeters (Scanner in) {
         System.out.print("Enter feet: ");
         double feet = in.nextDouble();
@@ -93,6 +123,11 @@ public class App {
         double meters = (feet * 0.3048) + (inches * 0.0254);
         System.out.println("Meters: " + meters);
     }
+/**
+* Converts meters to feet and inches
+* @param in Scanner object to read user input
+* @return void
+*/
     public static void metersToFeetAndInches (Scanner in) {
         System.out.print("Enter meters: ");
         double meters = in.nextDouble();
